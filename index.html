@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+<header>
+
+</header>
+
+<section >
+
+</section>
+
+<script>
+
+async function populate() {
+    const jsonURL = 'superheroes.json';
+    const jsonRequest = new Request(jsonURL);
+
+    const jsonResponse = await fetch(jsonRequest);
+    const jsonText = await jsonResponse.text();
+
+    const superHeroes = JSON.parse(jsonText);
+    RenderEncabezado(superHeroes);
+    renderHeroes(superHeroes);
+}
+
+function RenderEncabezado(superHeroes) {
+    const Encabezado_Elemento = document.querySelector('header');
+
+    const ContenedorDiv = document.createElement('div');
+    ContenedorDiv.classList.add('containers'); // Agregar una clase para aplicar estilos específicos
+
+    // Crear una imagen
+    const Imagen = document.createElement('img');
+    Imagen.src = 'https://preview.redd.it/1brz63tcb1691.png?width=640&crop=smart&auto=webp&s=d66964ea51e3f83d590c565186fac0f2d50cf6b7'; // Cambia 'imagen.png' a la URL de tu imagen
+    ContenedorDiv.appendChild(Imagen);
+
+    // Crear un encabezado h1
+    const Titulo = document.createElement('h1');
+    Titulo.textContent = 'Liga de la Justicia'; // Puedes cambiar el texto según lo necesites
+    ContenedorDiv.appendChild(Titulo);
+
+    // Agregar el contenedor div al encabezado
+    Encabezado_Elemento.appendChild(ContenedorDiv);
+}
+
+
+function renderHeroes(superHeroes) {
+    const Seccion_Elemento = document.querySelector('section');
+    const Los_heroes = superHeroes.Integrantes;
+
+    for (const hero of Los_heroes) {
+        // Dentro de la función renderHeroes
+        const Tabla_Heroe = document.createElement('table');
+        Tabla_Heroe.classList.add('tabla-superheroes');
+
+        // Crear una fila para el nombre del personaje y su alias
+        const Fila_N1 = document.createElement('tr');
+        const Celda_N1 = document.createElement('td');
+        Celda_N1.textContent = 'Nombre del personaje:';
+        const Celda_N2 = document.createElement('td');
+        Celda_N2.textContent = hero.Nombre_Personaje;
+        Fila_N1.appendChild(Celda_N1);
+        Fila_N1.appendChild(Celda_N2);
+
+        // Crear una fila para la edad real
+        const Fila_N2 = document.createElement('tr');
+        const Celda_N3 = document.createElement('td');
+        Celda_N3.textContent = 'Edad real:';
+        const Celda_N4 = document.createElement('td');
+        Celda_N4.textContent = hero.Edad_Real;
+        Fila_N2.appendChild(Celda_N3);
+        Fila_N2.appendChild(Celda_N4);
+
+        // Crear una fila para los superpoderes
+        const Fila_N3 = document.createElement('tr');
+        const Celda_N5 = document.createElement('td');
+        Celda_N5.textContent = 'SuperPoderes Heore:';
+        const Celda_N6 = document.createElement('td');
+        const Poder_Lista_Item = document.createElement('ul');
+
+        // Agregar superpoderes como elementos de lista
+        for (const power of hero.Poderes_Personaje) {
+            const listItem = document.createElement('li');
+            listItem.textContent = power;
+            Poder_Lista_Item.appendChild(listItem);
+        }
+
+        // Crear una fila para la imagen del superhéroe
+        const row4 = document.createElement('tr');
+        const cell7 = document.createElement('td');
+        cell7.colSpan = 2; // Establecer el colspan para que ocupe dos columnas
+        const image = document.createElement('img');
+        image.src = hero.Imagen_URL; // Usar la URL de la imagen del superhéroe
+        image.alt = hero.Nombre_Personaje; // Proporcionar un atributo alt para la imagen
+        cell7.appendChild(image);
+        row4.appendChild(cell7);
+
+        // Agregar la fila de la imagen a la tabla
+        Tabla_Heroe.appendChild(row4);
+
+        Celda_N6.appendChild(Poder_Lista_Item);
+        Fila_N3.appendChild(Celda_N5);
+        Fila_N3.appendChild(Celda_N6);
+
+        // Agregar todas las filas a la tabla
+        Tabla_Heroe.appendChild(Fila_N1);
+        Tabla_Heroe.appendChild(Fila_N2);
+        Tabla_Heroe.appendChild(Fila_N3);
+
+        // Agregar la tabla a la sección
+        Seccion_Elemento.appendChild(Tabla_Heroe);
+    }
+}
+
+populate();
+
+</script>
+<footer class="footer">
+    <div class="contact-info">
+      <img src="https://cdn-icons-png.flaticon.com/512/6367/6367242.png" alt="Correo electrÃ³nico">
+      miguel.mcnb@gmail.com
+    </div>
+    <div class="contact-info">
+      <img src="https://cdn-icons-png.flaticon.com/512/3095/3095610.png" alt="Número de teléfono">
+      +573006308313
+    </div>
+    <p>El menu fue creado por: Sergioandres200424@gmail.com</p>
+    <p>&copy; Oneplayerx2023-2023. Prohibida la reproducción total o parcial de estos contenidos sin el permiso expreso de los autores.</p>
+  </div>
+  <a href="https://api.whatsapp.com/send?phone=+573006308313" class="whatsapp-float" target="_blank">
+    <img src="https://png.pngtree.com/png-vector/20221018/ourlarge/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="WhatsApp">
+</body>
+</html>

@@ -1,0 +1,96 @@
+{
+    "Liga_Superheroes": "Liga de la justicia",
+    "Ciudad_Principal": "Metro City",
+    "Creacion": 2016,
+    "Guarida_Secreta": "Super tower",
+    "En_Operacion": true,
+    "Integrantes": [
+        {
+            "Nombre_Personaje": "Batman",
+            "Edad_Real": 35,
+            "Alias_Superheroe": "Bruce Wayne",
+            "Poderes_Personaje": [
+                "Master detective",
+                "Peak human physical condition",
+                "Utilizes high-tech equipment and gadgets"
+            ],
+            "Imagen_URL": "https://i.uai.com.br/JOu2iNnZDIuy-EzziAf_lg6kRsw=/1200x900/smart/imgsapp2.uai.com.br/app/noticia_133890394703/2023/02/12/317708/batman-nos-quadrinhos-da-dc_1_59778.jpg"
+        },
+        {
+            "Nombre_Personaje": "Superman",
+            "Edad_Real": 30,
+            "Alias_Superheroe": "Clark Kent",
+            "Poderes_Personaje": [
+              "Fuerza sobrehumana",
+              "Velocidad sobrehumana",
+              "Vuelo",
+              "Visión de rayos X",
+              "Visión calorífica",
+              "Súper aliento",
+              "Invulnerabilidad"
+            ],
+            "Imagen_URL": "https://www.cinemascomics.com/wp-content/uploads/2021/06/superman-comics-dest.jpg"
+          },
+        {
+            "Nombre_Personaje": "Linterna Verde",
+            "Edad_Real": "Varía según la continuidad",
+            "Alias_Superheroe": "Hal Jordan",
+            "Poderes_Personaje": [
+              "Anillo de poder que crea construcciones de energía sólida",
+              "Vuelo",
+              "Resistencia sobrehumana"
+            ],
+            "Imagen_URL": "https://elcomercio.pe/resizer/5KZtdy3xkDqEbvD6CEeiIrE9mLM=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/BWSTALTVBNDUTPTDF5BNF5XJIU.jpg"
+          },
+          
+          {
+            "Nombre_Personaje": "Mujer Maravilla",
+            "Edad_Real": "Varios siglos (Amazónica)",
+            "Alias_Superheroe": "Diana Prince",
+            "Poderes_Personaje": [
+              "Fuerza sobrehumana",
+              "Destreza en combate",
+              "Invulnerabilidad",
+              "Armamento mágico, incluyendo el Lazo de la Verdad"
+            ],
+            "Imagen_URL": "https://www.akiracomics.com/imagenes/poridentidad?identidad=23bee68b-e5bb-40ad-bdde-8cbaf364ea3a&ancho=850&alto="
+          },
+          {
+            "Nombre_Personaje": "Detective Marciano",
+            "Edad_Real": "Varía según la continuidad",
+            "Alias_Superheroe": "J'onn J'onzz",
+            "Poderes_Personaje": [
+              "Cambiar de forma",
+              "Fuerza sobrehumana",
+              "Telepatía",
+              "Vuelo"
+            ],
+            "Imagen_URL": "https://pm1.aminoapps.com/6310/d9055ad9f75b6ad8f3d63863d7c2959783060b58_hq.jpg"
+          },
+        {
+            "Nombre_Personaje": "Flash",
+            "Edad_Real": "Varía según la continuidad",
+            "Alias_Superheroe": "Barry Allen",
+            "Poderes_Personaje": [
+              "Super velocidad",
+              "Capacidad de viajar en el tiempo",
+              "Genera electricidad estática"
+            ],
+            "Imagen_URL": "https://www.cinemascomics.com/wp-content/uploads/2023/06/the-flash-dc-comics.jpg"
+          },
+          {
+            "Nombre_Personaje": "Aquaman",
+            "Edad_Real": "Varía según la continuidad",
+            "Alias_Superheroe": "Orin",
+            "Poderes_Personaje": [
+              "Comunicación telepática con la vida marina",
+              "Fuerza sobrehumana",
+              "Resistencia al agua y presiones extremas"
+            ],
+            "Imagen_URL": "https://4.bp.blogspot.com/-rIntBZpcWAI/XB0FYm0FhNI/AAAAAAABtvg/cWXZS5u8_HwAeMPHKgXQoQDsJ0m5fRpYwCEwYBhgL/s1600/aquaman-origen-poderes.jpg"
+          }
+          
+          
+    ]
+}
+

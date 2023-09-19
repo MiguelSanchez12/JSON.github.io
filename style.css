@@ -1,0 +1,185 @@
+/* Estilos generales para todas las pantallas */
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-escritorio-moderno-vector-diseno-azul-geometrico_53876-135923.jpg?w=740&t=st=1693957733~exp=1693958333~hmac=2e7231f9d9af5729cce0856b3831c4cbfd7947492cd50fc34a2061061b38c728');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2 {
+    font-family: 'Faster One', cursive;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Consulta de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+    section article {
+        width: 100%; /* Cambiar el ancho al 100% en pantallas más pequeñas */
+        float: none; /* Elimina la propiedad float */
+        margin: 0; /* Elimina el margen */
+    }
+
+    .containers img {
+        width: 10%; /* Aumentar el tamaño de las imágenes */
+        height: 10%;
+    }
+
+    .footer {
+        padding: 10px; /* Reducir el padding */
+        text-align: center;
+        margin-top: 10%; /* Reducir el margen superior */
+    }
+}
+
+/* Consulta de medios para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem; /* Reducir el tamaño de la fuente */
+    }
+
+    h2 {
+        font-size: 2rem; /* Reducir el tamaño de la fuente */
+    }
+}
+
+/* Estilos para las tablas que se aplican en todas las pantallas */
+.tabla-superheroes {
+    width: 48%;
+    margin: 10px auto;
+    table-layout: fixed;
+    box-sizing: border-box;
+    border: 1px solid #1c40b8;
+    float: none;
+}
+
+.tabla-superheroes td {
+    width: auto;
+    border: 1px solid #bc1414;
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabla-superheroes:hover {
+    box-shadow: 0 0 10px #666;
+    transform: scale(1.05);
+}
+
+.tabla-superheroes tr {
+    background-color: #d81adf;
+}
+
+.tabla-superheroes .nombre-personaje {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabla-superheroes .edad-real {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tabla-superheroes .poderes {
+    font-weight: bold;
+}
+
+.tabla-superheroes img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.containers img {
+    width: 5%;
+    height: 5%;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.containers {
+    display: flex;
+    background-color: rgb(73, 12, 32);
+}
+
+.containers h1 {
+    color: rgb(101, 9, 119);
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.containers a {
+    text-decoration: none;
+    color: white;
+}
+
+.containers a:hover {
+    color: rgb(0, 195, 255);
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 32px;
+    right: 40px;
+    background-color: green;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.whatsapp-float:hover {
+    background-color: darkgreen;
+}
+
+.whatsapp-float:active {
+    background-color: darkgreen;
+    box-shadow: 1px 1px 2px #999;
+}
+.footer {
+    background-color: #dcdcdc;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .contact-info {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.footer .contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
